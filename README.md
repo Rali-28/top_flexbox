@@ -22,7 +22,7 @@ Sample image of what the final render must look.
     * flex-shrink - reduce flex-items size relative to value and container
     
 - Box Model
-    * margin - the space out the box
+    * margin - the space outside the box model
     * border - the boundary between padding and margin
     * padding - the space between the content and border 
 
