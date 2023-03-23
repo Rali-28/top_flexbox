@@ -4,7 +4,6 @@
     border: 5px solid black;
 
     margin: auto;
-
     padding: 5px;
 
     display: flex;
@@ -12,9 +11,19 @@
     justify-content: space-around;
 }
 
-/* //* Makes all divs inside .box__main renders a box */
+/* Render box child divs of inside .box__main */
 .box__main > div {
     border: 5px solid black;
     padding: 5px;
+    margin: 5px;
 }
 
+ /* Make main top and bottom div grow to container size */
+ .box__top, .box__bottom {
+    flex-grow: 1;
+}
+
+/* Make main center box larger than siblings */
+.box__center {
+    flex-grow: 2;
+}
