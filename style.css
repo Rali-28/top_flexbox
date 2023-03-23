@@ -28,3 +28,7 @@ div {
 .box__center {
     flex-grow: 2;
 }
+
+.box__top, .box__top > div:nth-child(2) {
+    display: flex;
+}
