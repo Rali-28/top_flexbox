@@ -5,12 +5,11 @@
 
     margin: auto;
 
-    flex-direction: column;
-    justify-content: space-around;
-
     padding: 5px;
 
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* //* Makes all divs inside .box__main renders a box */
