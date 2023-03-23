@@ -1,11 +1,14 @@
 /* 
     General Styling
     Renders all divs as box
+    Grows all div relative to container size
 */
 div {
     border: 5px solid black;
     padding: 5px;
     margin: 5px;
+    
+    flex-grow: 1;
 }
 
 .box__main {
@@ -21,12 +24,7 @@ div {
     justify-content: space-around;
 }
 
- /* Make main top and bottom div grow to container size */
- .box__top, .box__bottom {
-    flex-grow: 1;
-}
-
-/* Make main center box larger than siblings */
+/* Make box larger than siblings */
 .box__center {
     flex-grow: 2;
 }
