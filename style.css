@@ -2,6 +2,7 @@
     General Styling
     Renders all divs as box
     Grows all div relative to container size
+    Makes all divs a flex-container
 */
 div {
     border: 5px solid black;
@@ -9,17 +10,19 @@ div {
     margin: 5px;
     
     flex-grow: 1;
+    display: flex;
 }
 
+/* 
+    The main container of the project 
+    Width and Height is relative to viewer's screen     
+*/
 .box__main {
     width: 80vw;
     height: 80vh;
-    border: 5px solid black;
 
     margin: auto;
-    padding: 5px;
 
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -29,19 +32,19 @@ div {
     flex-grow: 2;
 }
 
-.box__top, .box__bottom, .box__top > div:nth-child(2) {
-    display: flex;
-}
 
+/* 
+    Selects flex-items inside the center div of box__top
+    Removes margin    
+*/
 .box__top > div:nth-child(2) > div {
     margin: 0;
 }
 
-/* For rendering the center box  */
-.box__center {
-    display: flex;
-}
-
+/* 
+    Flex container inside box__center 
+    Groups two divs in a column    
+*/
 span {
     flex-grow: 1;
     display: flex;
