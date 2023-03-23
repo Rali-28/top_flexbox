@@ -25,11 +25,11 @@ div {
 }
 
 /* Make box larger than siblings */
-.box__center {
+.box__center, .bottom-grow {
     flex-grow: 2;
 }
 
-.box__top, .box__top > div:nth-child(2) {
+.box__top, .box__bottom, .box__top > div:nth-child(2) {
     display: flex;
 }
 
