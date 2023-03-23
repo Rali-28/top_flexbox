@@ -13,7 +13,8 @@
 }
 
 /* //* Makes all divs inside .box__main renders a box */
-.box__main > div {
+.box__main ~ div {
     border: 5px solid black;
     padding: 5px;
 }
+
